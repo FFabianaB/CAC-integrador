@@ -1,0 +1,290 @@
+body{
+    margin:0;
+}
+
+:root{
+    --headerbg: #333a40;
+    --footerbg: #1d3c4e;
+    --colorComprar:green;
+    --colorHoverComprar:green;
+    --cardBg:rgb(243, 243, 243);
+    --lugarBg:#333a40;;
+}   
+
+/* cabecera */
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 5rem;
+    background-color:var(--headerbg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+
+.logo{
+ display: flex;
+ align-items: center;
+ margin-left: 4 rem;
+
+}
+header h3{
+    color: white;
+    
+    font-size: 1.25rem;
+}
+header li a{
+    color:rgba(255,255,255,.55);
+    text-decoration: none;
+    
+}
+.linav{
+    padding: 0.5rem 1rem;
+}
+.linav a:hover{
+    cursor: pointer;
+    color:white;
+    transition: 1s;
+}
+
+#comprar{
+  padding: 0.5rem 1rem;
+}
+#comprar:hover{
+    background-color: var(--colorHoverComprar);
+    border-radius: 10px 10px 10px 10px;
+    color:white;
+    cursor: pointer;
+   
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    
+}
+
+header img{
+    height: 70 px;
+    max-width: 100px;
+}
+
+#comprar{
+    color: var(--colorComprar);
+}
+
+
+/* Main */
+
+.texto{
+    z-index: 5;
+    position: absolute;
+    top: 50%; /* Puedes ajustar la posición vertical según tus necesidades */
+    left: 70%; /* Puedes ajustar la posición horizontal según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra el texto vertical y horizontalmente en relación con el contenedor */
+    padding: 10px; /* Espaciado interior para el texto */
+    color: white;
+  }
+  
+.portadabtn{
+    z-index: 5;
+} 
+.btn-secondary a{
+    text-decoration: none;
+    color: white;
+}
+  
+
+.carousel-item img{
+    filter: brightness(55%);
+}
+/* Conoce a los oradores */
+
+.titulo {
+    padding: 10px;
+    text-align: center;
+   
+}
+.titulo p{
+    margin: 0;
+   
+}
+
+.titulo h2{
+    font-weight: bolder;
+    margin:0;
+    
+    
+}
+
+/* CARDS  oradores*/
+
+.card-group{
+    z-index: 0;
+   width: 100%;
+   height: 37rem;
+   margin-bottom:20px;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+.card{
+    align-items: center;
+    margin: 3%;
+    
+    background-color: var(--cardBg);
+    overflow: hidden;
+   
+}
+.card img{
+    height: 300px;
+    width: 300px;
+    
+}
+
+.cajaTags{
+    display: flex;
+    margin-bottom: 6px;
+    
+}
+.cajaTags>*{margin-right: 3px;}
+
+.tag{ 
+    
+text-align: center;
+color: white;    
+border-radius: 5px 5px 5px 5px;
+width: 88px;
+
+font-size: small;
+font-weight: bolder;
+}
+
+.uno{background-color: yellow;color: #1d3c4e;}
+.dos{background-color: rgb(29, 170, 151);}
+.tres{background-color: grey;}
+.cuatro{background-color: rgb(241, 80, 80);}
+
+/* Lugar */
+
+.horizontal{
+    display: flex;
+    
+    background-color:var(--lugarBg);
+    width: 100vw;
+}
+
+.horizontal img{
+    width: 50%;
+    
+}
+
+.caja{
+    padding: 3%;
+    color: white;
+}
+
+.boton{
+    width: 120px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+/* registro */
+
+.btn-form {
+    background: #96c93e;
+    color: #fff !important;
+  }
+  .btn-form:hover { background: #74aa17; }
+
+
+/* footer */
+
+footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--footerbg);
+    height: 6rem;
+    
+}
+footer ul {
+    display: flex;
+    
+    list-style: none;
+    justify-content: space-around;
+}
+
+footer ul li{
+    padding: 10px;
+    color: white;
+}
+
+footer ul li:hover{
+    padding: 10px;
+    color: rgb(134, 133, 133);
+    transition: 1s;
+    cursor: pointer;
+    
+}
+
+
+
+@media (max-width: 960px){
+    header{
+        position: relative;
+        font-size: small;
+    }
+    .texto{
+        width: 80%;
+        font-size: small;
+        top: 50%; 
+        left: 50%; 
+    }
+
+    #oradores{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .card-group{
+        display: flex;
+        flex-flow: column nowrap;
+             
+        height: 110rem;
+        width: 22rem;
+        
+    }
+    .card{
+       margin: 10px;
+    }
+
+   
+    .horizontal{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .horizontal img{
+       height:  30rem;
+       width: 100% ;
+       min-width: 50%;
+    }
+
+}
