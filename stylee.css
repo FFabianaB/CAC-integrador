@@ -287,4 +287,17 @@ footer ul li:hover{
        min-width: 50%;
     }
 
+    footer{
+        
+        height: 6%;
+        
+    }
+    footer ul {
+        flex-flow: row wrap;
+    }
+
+    nav{
+        display: none;
+    }
+
 }
