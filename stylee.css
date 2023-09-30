@@ -1,3 +1,5 @@
+
+
 body{
     margin:0;
 }
@@ -299,5 +301,16 @@ footer ul li:hover{
     nav{
         display: none;
     }
+
+}
+
+@media (min-height: 448px) {
+ .carousel-item, .carrusel, .carousel-inner{
+    min-height: 70vh;
+ }
+ .carousel-item img{
+    min-height: 70vh;
+ }
+
 
 }
