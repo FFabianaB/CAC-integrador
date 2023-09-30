@@ -26,6 +26,8 @@ header{
     
   }
 
+
+
 .logo{
  display: flex;
  align-items: center;
@@ -77,6 +79,33 @@ header img{
 #comprar{
     color: var(--colorComprar);
 }
+
+
+/* ---------------------------------------------Boton desplegable-------------------------------- */
+.btn-group{
+    display: none;
+}
+.button, .dropdown-menu{
+    background-color: #38444e;
+   
+}
+
+/* Cambia el color de la flecha a rojo */
+.btn-secondary.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle{
+    background-color: #38444e;
+    border-color:#38444e;
+}
+
+.dropdown-item{
+    font-weight: bolder;
+}
+
+
+
 
 
 /* Main */
@@ -252,6 +281,10 @@ footer ul li:hover{
     header{
         position: relative;
         font-size: small;
+    }
+
+    .btn-group{
+        display: flex;
     }
     .texto{
         width: 80%;
