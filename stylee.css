@@ -8,7 +8,7 @@ body{
     --headerbg: #333a40;
     --footerbg: #1d3c4e;
     --colorComprar:green;
-    --colorHoverComprar:green;
+    --colorHoverComprar:rgb(9, 80, 9);
     --cardBg:rgb(243, 243, 243);
     --lugarBg:#333a40;;
 }   
@@ -17,7 +17,7 @@ body{
 header{
     position: fixed;
     z-index: 10;
-    width: 100%;
+    width: 100vw;
     height: 5rem;
     background-color:var(--headerbg);
     display: flex;
@@ -82,6 +82,12 @@ header img{
 .btn-group{
     display: none; /*oculta el desplegable */
 }
+.btn-group .btn-secondary{
+    height: 40px;
+    width: 40px;
+    
+}
+
 .button, .dropdown-menu{
     background-color: #38444e;
 }
@@ -100,6 +106,10 @@ header img{
 
 /* ---------------------------------------------Main Carousel------------------------------------------------------*/
 
+.carrusel{
+    width: 100vw;
+}
+
 .texto{
     z-index: 5;
     position: absolute;
@@ -113,9 +123,20 @@ header img{
 .portadabtn{
     z-index: 5;
 } 
+.btn-secondary{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    }
+
 .btn-secondary a{
     text-decoration: none;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 150px;
 }
   
 .carousel-item img{
@@ -136,7 +157,7 @@ header img{
     margin:0;   
 }
 
-/*------------------------------------------------- CARDS  "Oradores"---------------------------------*/
+/*------------------------------------------------- CARDS  Section "Oradores"---------------------------------*/
 
 .card-group{
     z-index: 0;
