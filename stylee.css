@@ -176,6 +176,12 @@ header img{
     overflow: hidden;
    
 }
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px #9bb0c2;
+}
+
 .card img{
     height: 300px;
     width: 300px;  
