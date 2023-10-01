@@ -9,7 +9,7 @@ body{
     --footerbg: #1d3c4e;
     --colorComprar:#198754;
     --colorHoverComprar:#198754;
-    --cardBg:rgb(243, 243, 243);
+    --cardBg:rgb(219, 216, 216);
     --lugarBg:#333a40;;
 }   
 
@@ -78,7 +78,7 @@ header img{
 }
 
 
-/* ---------------------------------------------Dropdown - Botón desplegable----------------------------------- */
+/* -----------------------------------------------Dropdown - Botón desplegable------------------------------------------ */
 .btn-group{
     display: none; /*oculta el desplegable */
 }
@@ -104,7 +104,7 @@ header img{
     font-weight: bolder;
 }
 
-/* ---------------------------------------------Main Carousel------------------------------------------------------*/
+/* ---------------------------------------------Main Carousel-Section Informacion------------------------------------------*/
 
 .carrusel{
     width: 100vw;
@@ -158,7 +158,7 @@ header img{
     margin:0;   
 }
 
-/*------------------------------------------------- CARDS  Section "Oradores"---------------------------------*/
+/*---------------------------------------- CARDS  Section "Oradores"---------------------------------------------------------*/
 
 .card-group{
     z-index: 0;
@@ -207,7 +207,7 @@ font-weight: bolder;
 .tres{background-color: grey;}
 .cuatro{background-color: rgb(241, 80, 80);}
 
-/*------------------------------------------------Section Lugar y fecha-------------------------------------- */
+/*---------------------------------------------Section Lugar y fecha----------------------------------------------------------- */
 
 .box-where{
     display: flex;
@@ -238,7 +238,7 @@ font-weight: bolder;
     color: black;   
 }
 
-/* --------------------------------------------Section Registro ----------------------------------------*/
+/* --------------------------------------------Section Registro --------------------------------------------------*/
 
 .btn-form {
     background: #96c93e;
@@ -247,7 +247,7 @@ font-weight: bolder;
  .btn-form:hover { background: #74aa17; }
 
 
-/*-------------------------------------------------------- Footer ------------------------------*/
+/*---------------------------------------------- Footer ----------------------------------------------------------*/
 
 footer{
     width: 100vw;
@@ -278,7 +278,7 @@ footer ul li:hover{
     
 }
 
-/* -----------------------------------------Media Query-------------------------------------- */
+/* -----------------------------------------------Media Query---------------------------------------------------------- */
 
 @media (max-width: 960px){
     header{
@@ -308,13 +308,11 @@ footer ul li:hover{
              
         height: 110rem;
         width: 22rem;
-        
     }
     .card{
        margin: 10px;
     }
 
-   
     .box-where{
         flex-flow: column nowrap;
         align-items: center;
@@ -326,9 +324,7 @@ footer ul li:hover{
     }
 
     footer{
-        
         height: 6%;
-        
     }
     footer ul {
         flex-flow: row wrap;
