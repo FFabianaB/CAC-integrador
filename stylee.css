@@ -7,8 +7,8 @@ body{
 :root{
     --headerbg: #333a40;
     --footerbg: #1d3c4e;
-    --colorComprar:green;
-    --colorHoverComprar:rgb(9, 80, 9);
+    --colorComprar:#198754;
+    --colorHoverComprar:#198754;
     --cardBg:rgb(243, 243, 243);
     --lugarBg:#333a40;;
 }   
@@ -147,6 +147,7 @@ header img{
 .titulo {
     padding: 10px;
     text-align: center;  
+    
 }
 .titulo p{
     margin: 0;  
@@ -169,7 +170,7 @@ header img{
 }
 .card{
     align-items: center;
-    margin: 3%;
+    margin: 0% 2% 0% 2%;
     
     background-color: var(--cardBg);
     overflow: hidden;
