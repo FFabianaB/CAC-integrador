@@ -102,7 +102,9 @@ header img{
 
 .dropdown-item{
     font-weight: bolder;
+   
 }
+
 
 /* ---------------------------------------------Main Carousel-Section Informacion------------------------------------------*/
 
@@ -277,7 +279,41 @@ footer ul li:hover{
     cursor: pointer;
     
 }
+/*---------------------------------------------- Comprar ----------------------------------------------------------*/
+.espacio{
+    display: flex;
+}
+.categorias{
+    margin-top: 100px;
+    display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   box-sizing: border-box;
+}
+#btnUno,#btnDos,#btnTres{
+    margin: 3px;
+    height: 250px;
+    width: 250px;
+    border: 3px solid #3401cb;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #96c93e00;
 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;   
+}
+#btnUno:hover,#btnDos:hover,#btnTres:hover{
+    border: 10px solid #ffcb2f;
+    cursor: pointer;
+    box-sizing: border-box;
+    
+}
+
+.bolder{
+    font-weight: bolder;
+}
 /* -----------------------------------------------Media Query---------------------------------------------------------- */
 
 @media (max-width: 960px){
