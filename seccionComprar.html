@@ -102,7 +102,7 @@
                     <div class="row gx-2">
                         <div class="row gx-2">
                             <div class="col-md mb-3">
-                                <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
+                                <input type="text" class="form-control" placeholder="Cantidad de tickets" aria-label="Cantidad" required>
                             </div>
                             <select id="seleccionn" class=" col-md mb-3 form-select form-select-sm" aria-label="Small select example">
                                 <option selected>Seleccionar</option>
@@ -112,9 +112,13 @@
                               </select>
 
                         </div>
+                        <div class="total">
+                            <p>Total a pagar: $</p>
+                            <p></p>
+                        </div>
                         <div class="row row-cols-2">
                             
-                            <button type="reset" class="btn btn-lg btn-form">Borrar</button>
+                            <button id="borrar" type="reset" class="btn btn-lg btn-form">Borrar</button>
                             <button type="submit" class="btn btn-lg btn-form">Resumen</button>
                         </div>
                        

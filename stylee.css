@@ -318,6 +318,7 @@ footer ul li:hover{
 .bolder{
     font-weight: bolder;
 }
+
 /* -----------------------------------------------Media Query---------------------------------------------------------- */
 
 @media (max-width: 960px){

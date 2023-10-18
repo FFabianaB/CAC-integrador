@@ -71,6 +71,11 @@ function evaluarEstado(){
     } else {
          console.log("no aprete  3")
     };
+    if (b1 == false && b2 == false && b3 == false){
+        quitarBg(btnUno);
+        quitarBg(btnDos);
+        quitarBg(btnTres);
+    }
 };
 
 // ------------------------MenuLabel------------------------
@@ -93,3 +98,7 @@ nn.addEventListener('change', function() {
       console.log('Junior seleccionado');
     } else { reseteada();evaluarEstado();}
   });
+
+  var borrar = document.getElementById("borrar");
+  borrar.addEventListener("click", function(){reseteada();evaluarEstado();});
+  
