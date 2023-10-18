@@ -24,11 +24,11 @@
         
         <nav>
             <ul>
-                <li class="linav"><a href="#informacion">La Conferencia</a></li>
-                <li class="linav"><a href="#oradores">Los Oradores</a></li>
-                <li class="linav"><a href="#lugar">El lugar y la fecha</a></li>
-                <li class="linav"><a href="#registro">Conviértete en orador</a></li>
-                <li id="comprar">Comprar Tickets</li>
+                <li class="linav"><a href="index.html#informacion">La Conferencia</a></li>
+                <li class="linav"><a href="index.html#oradores">Los Oradores</a></li>
+                <li class="linav"><a href="index.html#lugar">El lugar y la fecha</a></li>
+                <li class="linav"><a href="index.html#registro">Conviértete en orador</a></li>
+                
             </ul>
         </nav>
 
@@ -38,12 +38,11 @@
             <i class="fa-solid fa-bars"></i>
         </button>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#informacion">La Conferencia</a></li>
-            <li><a class="dropdown-item" href="#oradores">Los Oradores</a></li>
-            <li><a class="dropdown-item" href="#lugar">El lugar y la fecha</a></li>
-            <li><a class="dropdown-item" href="#registro">Conviértete en orador</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Comprar Tickets</a></li>
+            <li><a class="dropdown-item" href="index.html#informacion">La Conferencia</a></li>
+            <li><a class="dropdown-item" href="index.html#oradores">Los Oradores</a></li>
+            <li><a class="dropdown-item" href="index.html#lugar">El lugar y la fecha</a></li>
+            <li><a class="dropdown-item" href="index.html#registro">Conviértete en orador</a></li>
+    
         </ul>
         </div>
 
@@ -93,20 +92,24 @@
                             <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col mb-3">
                             <input type="email" class="form-control" placeholder="Correo" aria-label="Correo" required>
                         </div>
                     </div>
-                    <div class="row">
+
+                    <div class="row gx-2">
                         <div class="row gx-2">
                             <div class="col-md mb-3">
                                 <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
                             </div>
-                            <div class="col-md mb-3">
-                                <input type="text" class="form-control" placeholder="Categoria" aria-label="Categoria" required>
-                            </div>
-
+                            <select id="seleccionn" class=" col-md mb-3 form-select form-select-sm" aria-label="Small select example">
+                                <option selected>Seleccionar</option>
+                                <option value="1">Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                              </select>
 
                         </div>
                         <div class="row row-cols-2">

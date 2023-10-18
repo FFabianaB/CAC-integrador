@@ -53,9 +53,13 @@ header li a{
 }
 
 #comprar{
-  padding: 0.5rem 1rem;
+ display: flex;
+ align-items: center;
 }
-#comprar:hover{
+#comprar a{
+    padding: 0.5rem 1rem;
+}
+#comprar:hover, #comprar a:hover{
     background-color: var(--colorHoverComprar);
     border-radius: 10px 10px 10px 10px;
     color:white;
@@ -125,13 +129,13 @@ header img{
 .portadabtn{
     z-index: 5;
 } 
-.btn-secondary{
+.btn-secondary, .btn-success{
     padding: 0px;
     margin: 0px;
     border: 0px;
     }
 
-.btn-secondary a{
+.btn-secondary a, .btn-success a{
     text-decoration: none;
     color: white;
     display: flex;
@@ -279,12 +283,12 @@ footer ul li:hover{
     cursor: pointer;
     
 }
-/*---------------------------------------------- Comprar ----------------------------------------------------------*/
+/*---------------------------------------Seccion Comprar ----------------------------------------------------------*/
 .espacio{
     display: flex;
 }
 .categorias{
-    margin-top: 100px;
+    margin-top: 80px;
     display: flex;
    justify-content: center;
    align-content: center;

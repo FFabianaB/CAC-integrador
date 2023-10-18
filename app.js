@@ -73,3 +73,23 @@ function evaluarEstado(){
     };
 };
 
+// ------------------------MenuLabel------------------------
+
+var nn = document.getElementById("seleccionn");
+
+nn.addEventListener('change', function() {
+    var selectedOption = this.options[this.selectedIndex];
+    if (selectedOption.value === "1") {
+      // Acciones para la opción 'Estudiante'
+      reseteada();b1=true;evaluarEstado();
+      console.log('Estudiante seleccionado');
+    } else if (selectedOption.value === "2") {
+      // Acciones para la opción 'Trainee'
+      reseteada();b2=true;evaluarEstado();
+      console.log('Trainee seleccionado');
+    } else if (selectedOption.value === "3") {
+      // Acciones para la opción 'Junior'
+      reseteada();b3=true;evaluarEstado();
+      console.log('Junior seleccionado');
+    } else { reseteada();evaluarEstado();}
+  });
