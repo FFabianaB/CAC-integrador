@@ -308,12 +308,6 @@ footer ul li:hover{
     flex-flow: column nowrap;
     justify-content: center;   
 }
-#btnUno:hover,#btnDos:hover,#btnTres:hover{
-    border: 10px solid #ffcb2f;
-    cursor: pointer;
-    box-sizing: border-box;
-    
-}
 
 .bolder{
     font-weight: bolder;
