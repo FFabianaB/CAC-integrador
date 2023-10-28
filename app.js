@@ -27,14 +27,14 @@ function quitarBg(boton) {
 }
 
 function reseteada(){
-    console.log("Se ejecuto reseteada");
+   
     b1 = false; 
     b2 = false;  
     b3 = false;
 };
 
 function evaluarEstado(){
-    console.log("se ejecuto evaluar estado");
+    
 
     if(b1 == true){
         btnUno.style.backgroundColor= "#ffcb2f";
@@ -43,38 +43,27 @@ function evaluarEstado(){
         
         quitarBg(btnDos);
         quitarBg(btnTres);
-        console.log("aprete uno");
+       
 
         
-    }else {
-        console.log("no aprete 1")
-   };
-    
-    if(b2 == true){
+    }else if(b2 == true){
         btnDos.style.backgroundColor= "#ffcb2f";
         btnDos.style.border= "10px solid #ffcb2f";
        
         
         quitarBg(btnUno);
         quitarBg(btnTres);
-        console.log("aprete dos");
+       
         
-    }else {
-        console.log("no aprete 2")
-   };
-    
-    if(b3 == true){
+    }else if(b3 == true){
         btnTres.style.backgroundColor= "#ffcb2f";
         btnTres.style.border= "10px solid #ffcb2f";
 
         quitarBg(btnUno);
         quitarBg(btnDos);
-        console.log("aprete tres");
+     
         
-    } else {
-         console.log("no aprete  3")
-    };
-    if (b1 == false && b2 == false && b3 == false){
+    } else if (b1 == false && b2 == false && b3 == false){
         quitarBg(btnUno);
         quitarBg(btnDos);
         quitarBg(btnTres);
@@ -85,7 +74,7 @@ function evaluarEstado(){
 
 
 let btnborrar = document.getElementById("bdel");
-btnborrar.addEventListener("click", function(){reseteada();evaluarEstado();console.log("Aprete el boton borrar")});
+btnborrar.addEventListener("click", function(){reseteada();evaluarEstado();escribirCantidadTickets.innerText="";});
 // ------------------------MenuLabel------------------------
 
 var mnuDesplegable = document.getElementById("menuDesplegable");
@@ -101,19 +90,19 @@ mnuDesplegable.addEventListener('change', function(){
 function evaluarofertaElegida(){
     
     if (ofertaElegida.value == "1") {
-        // Acciones para la opción 'Estudiante'
+      
         reseteada();b1=true;evaluarEstado();
-        console.log('Estudiante seleccionado');
+       
       } else if (ofertaElegida.value === "2") {
-        // Acciones para la opción 'Trainee'
+    
         reseteada();b2=true;evaluarEstado();
-        console.log('Trainee seleccionado');
+      
       } else if (ofertaElegida.value === "3") {
-        // Acciones para la opción 'Junior'
+      
         reseteada();b3=true;evaluarEstado();
-        console.log('Junior seleccionado');
+      
       } else { reseteada();evaluarEstado();}
-      console.log('Se ejecuto evaluar valor elegido')
+    
      
    
 }
@@ -125,7 +114,7 @@ btnResumen.addEventListener("click", function() {
   let inputTickets = Number(document.getElementById("inputTickets").value);
   console.log(inputTickets);
   aplicarDescuento(ofertaElegida, inputTickets);
-  console.log("apretaste calcular valor");
+  
 });
 
 
@@ -133,15 +122,15 @@ btnResumen.addEventListener("click", function() {
 function aplicarDescuento(ofertaElegida,inputTickets) {
     
     if (ofertaElegida.value == "1") {
-        // Acciones para la opción 'Estudiante'
+    
         resultado=inputTickets *40;
         escribirCantidadTickets.innerText=resultado;
       } else if (ofertaElegida.value === "2") {
-        // Acciones para la opción 'Trainee'
+      
         resultado=inputTickets *100;
         escribirCantidadTickets.innerText=resultado;
       } else if (ofertaElegida.value === "3") {
-        // Acciones para la opción 'Junior'
+       
         resultado=inputTickets*170;
         escribirCantidadTickets.innerText=resultado;
       } else { resultado=inputTickets*200;
