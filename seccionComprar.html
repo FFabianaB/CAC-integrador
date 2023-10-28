@@ -102,27 +102,30 @@
                     <div class="row gx-2">
                         <div class="row gx-2">
                             <div class="col-md mb-3">
-                                <input type="text" class="form-control" placeholder="Cantidad de tickets" aria-label="Cantidad" required>
+                                <input id="inputTickets" type="text" class="form-control" placeholder="Cantidad de tickets" aria-label="Cantidad" required>
                             </div>
-                            <select id="seleccionn" class=" col-md mb-3 form-select form-select-sm" aria-label="Small select example">
+
+                            <select id="menuDesplegable" class=" col-md mb-3 form-select form-select-sm" aria-label="Small select example">
                                 <option selected>Seleccionar</option>
                                 <option value="1">Estudiante</option>
                                 <option value="2">Trainee</option>
                                 <option value="3">Junior</option>
-                              </select>
+                            </select>
 
                         </div>
                         <div class="total">
-                            <p>Total a pagar: $</p>
-                            <p></p>
+                            <p>Total a pagar: $ </p>
+                                <p id="escribirCantidadTickets"></p>
+                            
                         </div>
                         <div class="row row-cols-2">
                             
-                            <button id="borrar" type="reset" class="btn btn-lg btn-form">Borrar</button>
-                            <button type="submit" class="btn btn-lg btn-form">Resumen</button>
+                            <button  id="bdel" type="reset" class="btn btn-lg btn-form">Borrar</button>
+                            <div id="btnResumen"><p>Calcular</p></div>
                         </div>
                        
                     </div>
+                    
                 </form>
             </div>
         </div>

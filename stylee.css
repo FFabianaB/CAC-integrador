@@ -319,6 +319,33 @@ footer ul li:hover{
     font-weight: bolder;
 }
 
+.total{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightblue;
+
+    margin-bottom: 8px;
+}
+.total p{
+    margin-top: 10px;
+    margin-left: 3%;
+}
+
+#btnResumen{
+    background-color: #96c93e;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+}
+#btnResumen p{
+    color: white;
+    font-weight: bolder;
+}
 /* -----------------------------------------------Media Query---------------------------------------------------------- */
 
 @media (max-width: 960px){
