@@ -39,30 +39,20 @@ function evaluarEstado(){
     if(b1 == true){
         btnUno.style.backgroundColor= "#ffcb2f";
         btnUno.style.border= "10px solid #ffcb2f";
-        
-        
         quitarBg(btnDos);
         quitarBg(btnTres);
        
-
-        
     }else if(b2 == true){
         btnDos.style.backgroundColor= "#ffcb2f";
         btnDos.style.border= "10px solid #ffcb2f";
-       
-        
-        quitarBg(btnUno);
+         quitarBg(btnUno);
         quitarBg(btnTres);
-       
-        
-    }else if(b3 == true){
+     }else if(b3 == true){
         btnTres.style.backgroundColor= "#ffcb2f";
         btnTres.style.border= "10px solid #ffcb2f";
-
         quitarBg(btnUno);
         quitarBg(btnDos);
      
-        
     } else if (b1 == false && b2 == false && b3 == false){
         quitarBg(btnUno);
         quitarBg(btnDos);
@@ -70,12 +60,9 @@ function evaluarEstado(){
     }
 };
 
-
-
-
 let btnborrar = document.getElementById("bdel");
 btnborrar.addEventListener("click", function(){reseteada();evaluarEstado();escribirCantidadTickets.innerText="";});
-// ------------------------MenuLabel------------------------
+
 
 var mnuDesplegable = document.getElementById("menuDesplegable");
 
@@ -84,8 +71,6 @@ mnuDesplegable.addEventListener('change', function(){
     evaluarofertaElegida(ofertaElegida)
     return ofertaElegida.value
 }, );
-
-
 
 function evaluarofertaElegida(){
     
@@ -103,8 +88,6 @@ function evaluarofertaElegida(){
       
       } else { reseteada();evaluarEstado();}
     
-     
-   
 }
 
 const btnResumen = document.getElementById("btnResumen");
@@ -117,24 +100,26 @@ btnResumen.addEventListener("click", function() {
   
 });
 
-
-
 function aplicarDescuento(ofertaElegida,inputTickets) {
     
     if (ofertaElegida.value == "1") {
     
-        resultado=inputTickets *40;
+        resultado=(inputTickets*200)-((inputTickets*200)*80/100);
         escribirCantidadTickets.innerText=resultado;
       } else if (ofertaElegida.value === "2") {
       
-        resultado=inputTickets *100;
+        resultado=(inputTickets*200)-((inputTickets *200)*50/100);
         escribirCantidadTickets.innerText=resultado;
       } else if (ofertaElegida.value === "3") {
        
-        resultado=inputTickets*170;
+        resultado=(inputTickets*200)-((inputTickets*200)*15/100);
         escribirCantidadTickets.innerText=resultado;
-      } else { resultado=inputTickets*200;
+      } else if(isNaN(inputTickets)) {
+          escribirCantidadTickets.innerText="Por favor, ingresa valores numéricos";
+      }       else { 
+        resultado=inputTickets*200;
         escribirCantidadTickets.innerText=resultado;}
+       
       
 };
 
